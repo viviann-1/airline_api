@@ -11,11 +11,8 @@ import java.nio.ByteBuffer;
 import java.util.List;
 
 public interface FlightRepository extends JpaRepository<Flight, Long> {
-    //List<Flight> findAllAvailableFlights(String destination);
-
-    default Flight addFlightDetails() {
+    default Flight addFlightDetails(){
         return null;
-    }
-
+    };
 
 }
